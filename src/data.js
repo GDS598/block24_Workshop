@@ -65,4 +65,13 @@ export const puppyList = [
       ownerId: 3,
       tricks: [],
     },
-];
+    {
+      id: 8,
+      name: "Bennie",
+      email: "bennie@email.com",
+      isCute: false,
+      age: 19,
+      ownerId: 3,
+      tricks: [],
+    },
+]

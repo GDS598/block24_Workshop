@@ -20,17 +20,18 @@ function App() {
             return <p onClick={()=>{setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>;
           })
         }
-      {featPupId && (
-        <div>
-          <h2>{featuredPup.name}</h2>
-          <ul>
-            <li>Age: {featuredPup.age}</li>
-            <li>Email: {featuredPup.email}</li>
-          </ul>
-        </div>
-      )};
-    </div>
-  );
+        {featPupId && (
+          <div className='Deets'>
+            <h2>{featuredPup.name}</h2>
+            <ul>
+              <li>Age: {featuredPup.age}</li>
+              <li>Email: {featuredPup.email}</li>
+            </ul>
+          </div>
+        )}
+    </div> 
+    )
+
 }
 
 export default App
